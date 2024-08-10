@@ -1,71 +1,120 @@
 /* CSS for Home */
 
-
-
 /* CSS for About */
 
-
 /* CSS for Portfolio */
-
 
 /* CSS for *Achievement/
 
 
 /* CSS for Contact */
 
-
-
 /* CSS for Main Screen */
-.mainScreen{
-    background-color: black;
-    width: 100vw;
-    height: 100vh;
+.mainScreen {
+  background-color: #111111;
+  width: 100vw;
+  height: 100vh;
+  .headingContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .heading {
+    position: absolute;
+    transform: translateY(140%);
+    margin: 0px;
+    font-size: 56px;
+    font-weight: 900;
+    color: #ffffff;
+    span {
+      color: orange;
+    }
+  }
+  .subHeading {
+    margin: 0;
+    margin-top: 50px;
+
+    position: relative;
+    font-size: 110px;
+    letter-spacing: 10px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.07);
+  }
 }
 
 /* CSS for Navbar */
 .navbar {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
 }
 
 .nav-item {
-    margin: 15px 0;
-    padding: 15px;
-    border-radius: 50%;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    position: relative;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
 }
 
-.nav-item.active, 
+.nav-item.active,
 .nav-item:hover {
-    background-color: #FFA500; /* Orange color */
+  background-color: #ffa500; /* Orange color */
 }
 
 .nav-label {
-    position: absolute;
-    left: 50px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #FFA500;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 20px;
-    white-space: nowrap;
-    font-size: 14px;
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffa500;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  white-space: nowrap;
+  font-size: 14px;
 }
 
 .nav-item.active .nav-label,
 .nav-item:hover .nav-label {
-    display: inline-block;
+  display: inline-block;
 }
 
 .nav-item .nav-label {
-    display: none;
+  display: none;
+}
+
+/* Tablet CSS */
+@media (min-width: 750px) and (max-width: 992px) {
+  /* CSS for Main Screen */
+  .mainScreen {
+    .heading {
+      font-size: 45px;
+    }
+    .subHeading {
+      font-size: 90px;
+      letter-spacing: 5px;
+      margin-top: 40px;
+    }
+  }
+}
+
+/* Mobile CSS */
+@media screen and (max-width: 750px) {
+  /* CSS for Main Screen */
+  .mainScreen {
+    .heading {
+      font-size: 40 px;
+      position: relative;
+      transform: translateY(40%);
+    }
+    .subHeading {
+      display: none;
+    }
+  }
 }
