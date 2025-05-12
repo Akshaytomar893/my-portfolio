@@ -1,12 +1,5 @@
 /* CSS for Home */
-@keyframes rotateBorder {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
 .homeScreen{
   display: flex;
   flex-direction: column;
@@ -22,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: rotateBorder 5s linear infinite;
+
   }
   .profileBorder {
     height: 315px;
@@ -39,6 +32,30 @@
     width: 300px;
     border-radius: 50%;
     background-color: transparent;
+  }
+  .introWrapper{
+    max-width: 55vw;
+    margin-top: 32px;
+
+
+    p{
+      text-align: center;
+      color: white;
+    }
+  }
+  .cursor {
+    display: inline-block;
+    width: 10px;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 50%, 100% {
+      opacity: 1;
+    }
+    25%, 75% {
+      opacity: 0;
+    }
   }
 }
 
