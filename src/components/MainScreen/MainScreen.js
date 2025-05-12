@@ -3,7 +3,6 @@ import "../../Styles/GlobalStyles.css";
 
 const MainScreen = ({ heading, subHeading, children }) => {
   useEffect(() => {
-    debugger;
     const heading = document.getElementById("heading");
     if (heading) {
       const words = heading.textContent.split(" ");
@@ -25,7 +24,7 @@ const MainScreen = ({ heading, subHeading, children }) => {
           </p>
           <p className="subHeading">{subHeading}</p>
         </div>
-        <div>{children}</div>
+        <div className="screenContent">{children}</div>
       </div>
     </>
   );
