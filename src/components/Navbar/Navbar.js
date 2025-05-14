@@ -15,11 +15,11 @@ const Navbar = () => {
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
     const navItems = [
-        { icon: faHome, label: 'HOME', route:"/"},
-        { icon: faUser, label: 'ABOUT' , route:"/about"},
-        { icon: faBriefcase, label: 'WORK', route:"/work" },
-        { icon: faFlag, label: 'ACHIEVMENT', route:"/achievement" },
-        { icon: faEnvelope, label: 'CONTACT' , route:"/contact"}
+        { icon: faHome, label: 'HOME', route:"/my-portfolio/"},
+        { icon: faUser, label: 'ABOUT' , route:"/my-portfolio/about"},
+        { icon: faBriefcase, label: 'WORK', route:"/my-portfolio/work" },
+        { icon: faFlag, label: 'ACHIEVMENT', route:"/my-portfolio/achievement" },
+        { icon: faEnvelope, label: 'CONTACT' , route:"/my-portfolio/contact"}
     ];
 
     return (
