@@ -13,11 +13,11 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/about" element={<About />} />
-        <Route exact path="/work" element={<Portfolio />} />
-        <Route exact path="/achievement" element={<Achievement />} />
-        <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/my-portfolio/" element={<Home />} />
+        <Route exact path="/my-portfolio/about" element={<About />} />
+        <Route exact path="/my-portfolio/work" element={<Portfolio />} />
+        <Route exact path="/my-portfolio/achievement" element={<Achievement />} />
+        <Route exact path="/my-portfolio/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );
