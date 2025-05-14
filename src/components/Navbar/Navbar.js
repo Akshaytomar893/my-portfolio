@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faBriefcase, faFlag, faEnvelope, faBars } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css'; // Make sure to create this CSS file
 import { useNavigate } from 'react-router-dom';
+import { ColorPallete } from '../../assets';
 
 const Navbar = () => {
     const navigate = useNavigate()
@@ -16,7 +17,7 @@ const Navbar = () => {
     const navItems = [
         { icon: faHome, label: 'HOME', route:"/"},
         { icon: faUser, label: 'ABOUT' , route:"/about"},
-        { icon: faBriefcase, label: 'PORTFOLIO', route:"/portfolio" },
+        { icon: faBriefcase, label: 'WORK', route:"/work" },
         { icon: faFlag, label: 'ACHIEVMENT', route:"/achievement" },
         { icon: faEnvelope, label: 'CONTACT' , route:"/contact"}
     ];
@@ -26,6 +27,7 @@ const Navbar = () => {
             <div className="hamburger" onClick={toggleMenu}>
                 <FontAwesomeIcon icon={faBars} size="lg" color='white'/>
             </div>
+               
 
             <div className={`navbar ${menuOpen ? 'show' : ''}`}>
                 {navItems.map((item, index) => (
@@ -42,6 +44,7 @@ const Navbar = () => {
                         </span>
                     </div>
                 ))}
+                 {/* <img src={ColorPallete} height={50} width={50}/> */}
             </div>
         </div>
     );

@@ -33,6 +33,20 @@
     border-radius: 50%;
     background-color: transparent;
   }
+  .exitWrapper{
+    margin-top: 24px;
+    margin-bottom: 16px;
+    quote{
+      font-size: 20px;
+      font-weight: 600;
+      font-style: italic;
+      /* color: white; */
+      background-clip: 'text' ;
+      background: linear-gradient(90deg,var(--theme-color), #ffffff, var(--theme-color)); /* Adjust colors here */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
   .introWrapper{
     max-width: 55vw;
     margin-top: 32px;
@@ -41,6 +55,7 @@
     p{
       text-align: center;
       color: white;
+      font-size: 24px;
     }
   }
   .cursor {
@@ -71,8 +86,8 @@
 /* CSS for Main Screen */
 .mainScreen {
   background-color: #111111;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   .headingContainer {
     display: flex;
     justify-content: center;
