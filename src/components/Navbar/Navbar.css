@@ -6,9 +6,17 @@
 }
 
 .hamburger {
-  display: none;
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
   /* margin-bottom: 10px; */
+}
+
+.hamburger div:first-child {
+  display: none;
 }
 
 /* Navigation bar */
@@ -64,12 +72,8 @@
 
 /* Responsive rules */
 @media (max-width: 768px) {
-  .navbar-container {
-    padding: 10px;
-  }
-  .hamburger {
+  .hamburger div:first-child {
     display: block;
-
   }
 
   .navbar {

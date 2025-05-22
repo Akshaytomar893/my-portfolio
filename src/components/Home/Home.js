@@ -48,7 +48,7 @@ const Home = () => {
       <MainScreen heading={"Akshay Tomar"} subHeading={messages}>
         <div className="homeScreen">
           <div className="profileWrapper">
-            <div class="profileBorder">
+            <div className="profileBorder">
               <img className="profileImage" src={ProfileImage} />
             </div>
           </div>
