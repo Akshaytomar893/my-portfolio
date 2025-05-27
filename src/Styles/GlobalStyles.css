@@ -42,7 +42,7 @@
       font-style: italic;
       /* color: white; */
       background-clip: 'text' ;
-      background: linear-gradient(90deg,var(--theme-color), #ffffff, var(--theme-color)); /* Adjust colors here */
+      background: linear-gradient(90deg,var(--theme-color), #ffffff, var(--theme-color));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -56,6 +56,11 @@
       text-align: center;
       color: white;
       font-size: 24px;
+      background-clip: 'text' ;
+      background: linear-gradient(90deg,var(--theme-color), #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
     }
   }
   .cursor {

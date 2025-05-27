@@ -19,14 +19,16 @@ const styles = {
   grid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
-    gap: '12px',
-    padding: '12px',
+    gap: '16px',
+    padding: '8px',
+    backgroundColor:'#202020',
+    borderRadius: '8px'
   },
   bubble: {
     width: '40px',
     height: '40px',
     borderRadius: '50%',
-    backgroundColor: '#000',
+
   },
 };
 

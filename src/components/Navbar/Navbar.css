@@ -14,6 +14,26 @@
   padding: 16px;
   /* margin-bottom: 10px; */
 }
+.cta-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.download-resume{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color:  var(--theme-color);
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  border: 2px solid var(--theme-color);
+  background-color: transparent;
+  p{
+    margin: 0;
+  }
+}
 
 .hamburger div:first-child {
   display: none;
@@ -42,11 +62,17 @@
   background-color: #333;
   color: #fff;
   cursor: pointer;
-  /* transition: background-color 0.3s ease; */
+
+  svg{
+    color:  var(--theme-color);
+  }
 }
 .nav-item.active,
 .nav-item:hover {
-  background-color:  var(--theme-color);; /* Orange color */
+  background-color:  var(--theme-color); 
+  svg{
+    color: #ffffff;
+  }
 }
 
 .nav-label {
