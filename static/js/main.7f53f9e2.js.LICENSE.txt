@@ -11,6 +11,18 @@
 	http://jedwatson.github.io/classnames
 */
 
+/*!
+ * 
+ *   @keyvaluesystems/react-vertical-stepper v0.1.6
+ *   git+https://github.com/KeyValueSoftwareSystems/react-vertical-stepper.git
+ *
+ *   Copyright (c) Keyvalue and project contributors.
+ *
+ *   This source code is licensed under the ISC license found in the
+ *   LICENSE file in the root directory of this source tree.
+ *
+ */
+
 /**
  * @license React
  * react-dom.production.min.js
