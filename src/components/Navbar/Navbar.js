@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
@@ -37,16 +37,25 @@ const Navbar = () => {
   const downloadResume = () => {
     window.open(`${process.env.PUBLIC_URL}/resume.pdf`, "_blank");
   };
+  useEffect(() => {
+    const handleScroll = () => {
+      setMenuOpen(false);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className="navbar-container">
-      <div className="hamburger" onClick={toggleMenu}>
-        <div>
+      <div className="hamburger">
+        <div onClick={toggleMenu}>
           <FontAwesomeIcon icon={faBars} size="lg" color="white" />
         </div>
         <div></div>
         <div className="cta-icons">
-          <button className="download-resume" onClick={()=>downloadResume()}>
+          <button className="download-resume" onClick={() => downloadResume()}>
             <FontAwesomeIcon icon={faDownload} size="lg" />
             <p>Resume</p>
           </button>
@@ -82,6 +91,10 @@ const Navbar = () => {
       </div>
       <ReactTooltip
         id="color-palette"
+        style={{
+          zIndex: 9999,
+          opacity: 1,
+        }}
         place="bottom"
         ref={tooltipRef}
         render={() => <ColorGrid tooltipRef={tooltipRef} />}

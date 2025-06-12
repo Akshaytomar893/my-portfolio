@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import MainScreen from "../MainScreen/MainScreen";
 import Stepper from "@keyvaluesystems/react-vertical-stepper";
 import { height, width } from "@fortawesome/free-solid-svg-icons/fa0";
+import { VeersaLogo } from "../../assets";
 
 const About = () => {
+  const hasInsertedRef = useRef(false);
   const subHeading = [
     "My Bio",
     "Who I Am",
@@ -68,12 +70,54 @@ const About = () => {
     }),
     InActiveBubble: (step, stepIndex) => ({}),
   };
+  useEffect(() => {
+    if (hasInsertedRef.current) return;
+    hasInsertedRef.current = true;
 
+    for (let i = 0; i < workSteps.length; i++) {
+      const ele = document.getElementById(`stepper-desc-${i}`);
+      if (!ele) continue;
+
+      const newSpan = ele.cloneNode(false);
+      newSpan.textContent = "Veersa Technologies Pvt Ltd";
+      ele.parentNode.insertBefore(newSpan, ele);
+    }
+  }, [workSteps]);
   return (
     <MainScreen heading={"About Me"} subHeading={subHeading}>
       <div className="aboutWrapper">
         <div className="stepper">
-          <h2>Work Experience</h2>
+          <h2
+            style={{
+              color: "white",
+              opacity: 0.7,
+              textDecoration: "underline",
+            }}
+          >
+            Work Experience
+          </h2>
+          {/* <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: 0,
+              marginLeft: "24px",
+              marginBottom: "8px",
+            }}
+          >
+            <img src={VeersaLogo} width={180} />
+            <p
+              style={{
+                color: "white",
+                opacity: 0.9,
+                fontSize: "12px",
+                margin: 0,
+                letterSpacing: 1,
+              }}
+            >
+              Veersa Technologies Pvt Ltd
+            </p>
+          </div> */}
           <Stepper
             steps={workSteps}
             currentStepIndex={workSteps?.length - 1}
@@ -82,7 +126,15 @@ const About = () => {
           />
         </div>
         <div className="stepper">
-          <h2>Education</h2>
+          <h2
+            style={{
+              color: "white",
+              opacity: 0.7,
+              textDecoration: "underline",
+            }}
+          >
+            Education
+          </h2>
           <Stepper
             steps={eduSteps}
             currentStepIndex={eduSteps?.length - 1}

@@ -93,7 +93,7 @@
 /* CSS for About */
 .aboutWrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
@@ -153,9 +153,10 @@
 /* Tablet CSS */
 @media (min-width: 750px) and (max-width: 992px) {
   .aboutWrapper {
+    margin-top: 24px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
   }
   .introWrapper {
@@ -189,10 +190,11 @@
 /* Mobile CSS */
 @media screen and (max-width: 750px) {
   .aboutWrapper {
+    margin-top: 24px;
+    margin-bottom: 32px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-start;
   }
   .introWrapper {
     max-width: 85vw !important;
