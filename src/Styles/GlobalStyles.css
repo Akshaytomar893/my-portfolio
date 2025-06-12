@@ -1,6 +1,6 @@
 /* CSS for Home */
 
-.homeScreen{
+.homeScreen {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,11 +11,14 @@
     height: 320px;
     width: 320px;
     border-radius: 50%;
-    background: conic-gradient( var(--theme-color), white ,  var(--theme-color)); /* smooth transition */
+    background: conic-gradient(
+      var(--theme-color),
+      white,
+      var(--theme-color)
+    ); /* smooth transition */
     display: flex;
     align-items: center;
     justify-content: center;
-
   }
   .profileBorder {
     height: 315px;
@@ -27,40 +30,45 @@
     justify-content: center;
   }
 
-  .profileImage{
+  .profileImage {
     height: 300px;
     width: 300px;
     border-radius: 50%;
     background-color: transparent;
   }
-  .exitWrapper{
+  .exitWrapper {
     margin-top: 24px;
     margin-bottom: 16px;
-    quote{
+    padding: 16px;
+    text-align: center;
+    quote {
       font-size: 20px;
       font-weight: 600;
       font-style: italic;
       /* color: white; */
-      background-clip: 'text' ;
-      background: linear-gradient(90deg,var(--theme-color), #ffffff, var(--theme-color));
+      background-clip: "text";
+      background: linear-gradient(
+        90deg,
+        var(--theme-color),
+        #ffffff,
+        var(--theme-color)
+      );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
   }
-  .introWrapper{
+  .introWrapper {
     max-width: 55vw;
     margin-top: 32px;
 
-
-    p{
+    p {
       text-align: center;
       color: white;
       font-size: 24px;
-      background-clip: 'text' ;
-      background: linear-gradient(90deg,var(--theme-color), #ffffff);
+      background-clip: "text";
+      background: linear-gradient(90deg, var(--theme-color), #ffffff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-
     }
   }
   .cursor {
@@ -68,18 +76,35 @@
     width: 10px;
     animation: blink 1s infinite;
   }
-  
+
   @keyframes blink {
-    0%, 50%, 100% {
+    0%,
+    50%,
+    100% {
       opacity: 1;
     }
-    25%, 75% {
+    25%,
+    75% {
       opacity: 0;
     }
   }
 }
 
 /* CSS for About */
+.aboutWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 80%;
+  .stepper {
+    flex: 1;
+  }
+}
+.stepper > div {
+  align-items: flex-start;
+}
 
 /* CSS for Portfolio */
 
@@ -105,7 +130,7 @@
     font-weight: 900;
     color: #ffffff;
     span {
-      color:  var(--theme-color);;
+      color: var(--theme-color);
     }
   }
   .subHeading {
@@ -118,18 +143,36 @@
     font-weight: 800;
     color: rgba(255, 255, 255, 0.07);
   }
-  .screenContent{
+  .screenContent {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 }
 
-
-
-
 /* Tablet CSS */
 @media (min-width: 750px) and (max-width: 992px) {
+  .aboutWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .introWrapper {
+    max-width: 75vw !important;
+  }
+  .profileWrapper {
+    height: 300px !important;
+    width: 300px !important;
+  }
+  .profileBorder {
+    height: 295px !important;
+    width: 295px !important;
+  }
+  .profileImage {
+    height: 280px;
+    width: 280px;
+  }
   /* CSS for Main Screen */
   .mainScreen {
     .heading {
@@ -145,10 +188,31 @@
 
 /* Mobile CSS */
 @media screen and (max-width: 750px) {
+  .aboutWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .introWrapper {
+    max-width: 85vw !important;
+  }
+  .profileWrapper {
+    height: 270px !important;
+    width: 270px !important;
+  }
+  .profileBorder {
+    height: 265px !important;
+    width: 265px !important;
+  }
+  .profileImage {
+    height: 250px !important;
+    width: 250px !important;
+  }
   /* CSS for Main Screen */
   .mainScreen {
     .heading {
-      font-size: 40 px;
+      font-size: 36px;
       position: relative;
       transform: translateY(40%);
     }

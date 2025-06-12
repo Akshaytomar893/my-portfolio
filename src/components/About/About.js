@@ -13,8 +13,8 @@ const About = () => {
   ];
   const workSteps = [
     {
-      label: "Software Engineer Intern",
-      description: "7th Feb 2022 - 18th July 2022",
+      label: "Senior Software Engineer",
+      description: "1st Jan 2024 - Current",
       isCompleted: true,
     },
     {
@@ -23,8 +23,25 @@ const About = () => {
       isCompleted: true,
     },
     {
-      label: "Senior Software Engineer",
-      description: "1st Jan 2024 - Current",
+      label: "Software Engineer Intern",
+      description: "7th Feb 2022 - 18th July 2022",
+      isCompleted: true,
+    },
+  ];
+  const eduSteps = [
+    {
+      label: "B.Tech in Computer Engineering ",
+      description: "2018-2022, AKTU(Lucknow), SGPA:8.3",
+      isCompleted: true,
+    },
+    {
+      label: "Intermediate",
+      description: "2016-17, CISCE Board, 85.00%",
+      isCompleted: true,
+    },
+    {
+      label: "High School",
+      description: "2014-15, CISCE Board, 87.00%",
       isCompleted: true,
     },
   ];
@@ -54,14 +71,25 @@ const About = () => {
 
   return (
     <MainScreen heading={"About Me"} subHeading={subHeading}>
-      <div>
-        <h2>Work Experience</h2>
-        <Stepper
-          steps={workSteps}
-          currentStepIndex={workSteps?.length - 1}
-          labelPosition="right"
-          styles={stylesOverRide}
-        />
+      <div className="aboutWrapper">
+        <div className="stepper">
+          <h2>Work Experience</h2>
+          <Stepper
+            steps={workSteps}
+            currentStepIndex={workSteps?.length - 1}
+            labelPosition="right"
+            styles={stylesOverRide}
+          />
+        </div>
+        <div className="stepper">
+          <h2>Education</h2>
+          <Stepper
+            steps={eduSteps}
+            currentStepIndex={eduSteps?.length - 1}
+            labelPosition="right"
+            styles={stylesOverRide}
+          />
+        </div>
       </div>
     </MainScreen>
   );
