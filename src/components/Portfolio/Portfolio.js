@@ -1,19 +1,168 @@
-import React from 'react'
-import MainScreen from '../MainScreen/MainScreen'
-
+import React from "react";
+import MainScreen from "../MainScreen/MainScreen";
 
 const Portfolio = () => {
-  const subHeading = ['Work Showcase', 'Featured Projects', 'Creative Output', 'Pixel Projects', 'Code Craft']
-  return (
-    <MainScreen heading={'Dev Portfolio'} subHeading={subHeading}>
-      <div style = {
-        {
-          color: 'white',
-          fontSize: '22px'
-        }
-      }>Work Under Progress</div>
-    </MainScreen>
-  )
-}
+  const badges = [
+    {
+      name: "Azure",
+      url: "https://img.shields.io/badge/Azure-0078D4.svg?style=for-the-badge&logo=microsoftazure&logoColor=white",
+    },
+    {
+      name: "CrossPlatform",
+      url: "https://img.shields.io/badge/CrossPlatform-4CAF50.svg?style=for-the-badge&logo=google&logoColor=white",
+    },
+    {
+      name: "CSS",
+      url: "https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=css3&logoColor=white",
+    },
+    {
+      name: "Debug",
+      url: "https://img.shields.io/badge/Debug-000000.svg?style=for-the-badge&logo=bugatti&logoColor=white",
+    },
+    {
+      name: "DevTools",
+      url: "https://img.shields.io/badge/DevTools-FF6F00.svg?style=for-the-badge&logo=googlechrome&logoColor=white",
+    },
+    {
+      name: "DSA",
+      url: "https://img.shields.io/badge/DSA-9C27B0.svg?style=for-the-badge&logo=codeforces&logoColor=white",
+    },
+    {
+      name: "Firebase",
+      url: "https://img.shields.io/badge/Firebase-FFCA28.svg?style=for-the-badge&logo=firebase&logoColor=black",
+    },
+    {
+      name: "GCP",
+      url: "https://img.shields.io/badge/GCP-4285F4.svg?style=for-the-badge&logo=googlecloud&logoColor=white",
+    },
+    {
+      name: "Git",
+      url: "https://img.shields.io/badge/Git-F05032.svg?style=for-the-badge&logo=git&logoColor=white",
+    },
+    {
+      name: "HTML",
+      url: "https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=html5&logoColor=white",
+    },
+    {
+      name: "Java",
+      url: "https://img.shields.io/badge/Java-007396.svg?style=for-the-badge&logo=openjdk&logoColor=white",
+    },
+    {
+      name: "JavaScript",
+      url: "https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black",
+    },
+    {
+      name: "jQuery",
+      url: "https://img.shields.io/badge/jQuery-0769AD.svg?style=for-the-badge&logo=jquery&logoColor=white",
+    },
+    {
+      name: "MUI",
+      url: "https://img.shields.io/badge/MUI-007FFF.svg?style=for-the-badge&logo=mui&logoColor=white",
+    },
+    {
+      name: "Next.js",
+      url: "https://img.shields.io/badge/Next.js-000000.svg?style=for-the-badge&logo=nextdotjs&logoColor=white",
+    },
+    {
+      name: "Nx",
+      url: "https://img.shields.io/badge/Nx-143055.svg?style=for-the-badge&logo=nx&logoColor=white",
+    },
+    {
+      name: "Python",
+      url: "https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=python&logoColor=white",
+    },
+    {
+      name: "React Native",
+      url: "https://img.shields.io/badge/React_Native-61DAFB.svg?style=for-the-badge&logo=react&logoColor=black",
+    },
+    {
+      name: "Redux",
+      url: "https://img.shields.io/badge/Redux-764ABC.svg?style=for-the-badge&logo=redux&logoColor=white",
+    },
+    {
+      name: "Responsive",
+      url: "https://img.shields.io/badge/Responsive-25A4E8.svg?style=for-the-badge&logo=responsive&logoColor=white",
+    },
+    {
+      name: "REST API",
+      url: "https://img.shields.io/badge/REST_API-FF6F00.svg?style=for-the-badge&logo=postman&logoColor=white",
+    },
+    {
+      name: "Redux Saga",
+      url: "https://img.shields.io/badge/Redux_Saga-999999.svg?style=for-the-badge&logo=redux&logoColor=white",
+    },
+    {
+      name: "SASS",
+      url: "https://img.shields.io/badge/Sass-CC6699.svg?style=for-the-badge&logo=sass&logoColor=white",
+    },
+    {
+      name: "SQL",
+      url: "https://img.shields.io/badge/SQL-336791.svg?style=for-the-badge&logo=postgresql&logoColor=white",
+    },
+    {
+      name: "TypeScript",
+      url: "https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=typescript&logoColor=white",
+    },
+    {
+      name: "VSCode",
+      url: "https://img.shields.io/badge/VSCode-007ACC.svg?style=for-the-badge&logo=visualstudiocode&logoColor=white",
+    },
+    {
+      name: "Webpack",
+      url: "https://img.shields.io/badge/Webpack-8DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black",
+    },
+  ];
 
-export default Portfolio
+  const subHeading = [
+    "Work Showcase",
+    "Featured Projects",
+    "Creative Output",
+    "Pixel Projects",
+    "Code Craft",
+  ];
+
+  return (
+    <MainScreen heading={"Dev Portfolio"} subHeading={subHeading}>
+      <div className="portfolioWrapper">
+        <h2
+          style={{
+            color: "white",
+            opacity: 0.7,
+            textDecoration: "underline",
+          }}
+        >
+          Tools & Technologies
+        </h2>
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "16px",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          {badges.map((badge) => (
+            <img
+              key={badge.name}
+              src={badge.url}
+              alt={`${badge.name} Badge`}
+              style={{ height: "36px", borderRadius: "8px" }}
+            />
+          ))}
+        </div>
+        {/* <h2
+          style={{
+            color: "white",
+            opacity: 0.7,
+            textDecoration: "underline",
+          }}
+        >
+          Works & Projects
+        </h2> */}
+      </div>
+    </MainScreen>
+  );
+};
+
+export default Portfolio;

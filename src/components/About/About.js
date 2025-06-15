@@ -96,28 +96,7 @@ const About = () => {
           >
             Work Experience
           </h2>
-          {/* <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: 0,
-              marginLeft: "24px",
-              marginBottom: "8px",
-            }}
-          >
-            <img src={VeersaLogo} width={180} />
-            <p
-              style={{
-                color: "white",
-                opacity: 0.9,
-                fontSize: "12px",
-                margin: 0,
-                letterSpacing: 1,
-              }}
-            >
-              Veersa Technologies Pvt Ltd
-            </p>
-          </div> */}
+
           <Stepper
             steps={workSteps}
             currentStepIndex={workSteps?.length - 1}

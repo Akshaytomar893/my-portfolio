@@ -107,6 +107,14 @@
 }
 
 /* CSS for Portfolio */
+.portfolioWrapper {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
 
 /* CSS for *Achievement/
 
