@@ -29,8 +29,13 @@ import Typescript from "./typescript.png";
 import Vscode from "./vscode.png";
 import Webpack from "./webpack.png";
 import React from "./react.png";
-
+import Duly from "./Duly.png";
+import Pharmacord from "./Pharmacord.png";
+import Avelo from "./Avelo.png";
 export {
+  Duly,
+  Pharmacord,
+  Avelo,
   ProfileImage,
   ColorPallete,
   VeersaLogo,

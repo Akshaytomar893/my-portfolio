@@ -1,5 +1,6 @@
 import React from "react";
 import MainScreen from "../MainScreen/MainScreen";
+import { Avelo, Duly, Pharmacord } from "../../assets";
 
 const Portfolio = () => {
   const badges = [
@@ -129,6 +130,7 @@ const Portfolio = () => {
             color: "white",
             opacity: 0.7,
             textDecoration: "underline",
+            marginTop: "3rem",
           }}
         >
           Tools & Technologies
@@ -151,15 +153,111 @@ const Portfolio = () => {
             />
           ))}
         </div>
-        {/* <h2
+        <h2
           style={{
             color: "white",
             opacity: 0.7,
             textDecoration: "underline",
+            marginTop: "5rem",
           }}
         >
           Works & Projects
-        </h2> */}
+        </h2>
+        <div className="projects">
+          <div className="project">
+            <img src={Avelo} height={100} />
+            <div>
+              <p className="points">
+                <span className="custom-list-icon" />
+                <span style={{ fontWeight: "700" }}>Unified Mobile App: </span>
+                Migrated legacy Blazor and React code into a single React Native
+                app, improving performance by 30%.
+              </p>
+              <p className="points">
+                <span className="custom-list-icon" />
+                <span style={{ fontWeight: "700" }}>Scalable Codebase: </span>
+                Implemented Nx monorepo architecture to streamline development
+                and enable cross-platform code sharing.
+              </p>
+              <p className="points">
+                <span className="custom-list-icon" />
+                <span style={{ fontWeight: "700" }}>
+                  Optimized Dashboards:{" "}
+                </span>
+                Rebuilt a Blazor-based dashboard in React, reducing load times
+                by 20% and enhancing performance.
+              </p>
+              <p className="points">
+                <span className="custom-list-icon" />
+                <span style={{ fontWeight: "700" }}>Feature Development: </span>
+                Built the “Manage Trip” feature, decreasing customer service
+                calls by 35% and increasing user engagement.
+              </p>
+              <p className="points">
+                <span className="custom-list-icon" />
+                <span style={{ fontWeight: "700" }}>Robust Foundations: </span>
+                Architected React apps with Redux-Saga, API integration, Webpack
+                config, and routing for long-term maintainability.
+              </p>
+            </div>
+          </div>
+          <div className="project">
+            <img src={Pharmacord} height={100} />
+            <div>
+              <p className="points">
+                <span className="custom-list-icon" />
+                <span style={{ fontWeight: "700" }}>
+                  Modular Feature Development:{" "}
+                </span>
+                Built core Angular features like the Patient Enrollment Form
+                using component-based architecture and reactive forms.
+              </p>
+              <p className="points">
+                <span className="custom-list-icon" />
+                <span style={{ fontWeight: "700" }}>
+                  API Integration & UI Design:{" "}
+                </span>
+                Integrated RESTful APIs and crafted responsive, reusable UI
+                components with SCSS for a seamless multi-device experience.
+              </p>
+              <p className="points">
+                <span className="custom-list-icon" />
+                <span style={{ fontWeight: "700" }}>
+                  Cross-Functional Collaboration:{" "}
+                </span>
+                Worked closely with backend and QA teams to ensure efficient
+                data flow, fast issue resolution, and timely delivery.
+              </p>
+            </div>
+          </div>
+          <div className="project">
+            <img src={Duly} height={100} />
+            <div>
+              {" "}
+              <p className="points">
+                <span className="custom-list-icon" />
+                <span style={{ fontWeight: "700" }}>Feature Development: </span>
+                Built core features like the Goal & Progress Tracker and
+                Appointment Scheduler, ensuring on-time delivery through close
+                collaboration with business and dev teams.
+              </p>
+              <p className="points">
+                <span className="custom-list-icon" />
+                <span style={{ fontWeight: "700" }}>
+                  Modern Frontend Stack:{" "}
+                </span>
+                Utilized JavaScript, ReactJS, Redux, Redux-Saga, and Material UI
+                to create efficient, user-centric interfaces.
+              </p>
+              <p className="points">
+                <span className="custom-list-icon" />
+                <span style={{ fontWeight: "700" }}>Team Collaboration: </span>
+                Played a key role in aligning UI development with product goals
+                through continuous feedback and cross-functional teamwork.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </MainScreen>
   );
