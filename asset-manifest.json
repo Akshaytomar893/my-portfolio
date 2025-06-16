@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.a8514c03.css",
-    "main.js": "/my-portfolio/static/js/main.b0ee5686.js",
+    "main.css": "/my-portfolio/static/css/main.1243e3c2.css",
+    "main.js": "/my-portfolio/static/js/main.1f7bde4d.js",
     "static/js/453.41811d64.chunk.js": "/my-portfolio/static/js/453.41811d64.chunk.js",
     "static/media/profile.png": "/my-portfolio/static/media/profile.5ec3b012e1e9f9c09dfb.png",
     "static/media/python.png": "/my-portfolio/static/media/python.6b545b9614fc277d2083.png",
+    "static/media/Avelo.png": "/my-portfolio/static/media/Avelo.8d956a4652bf54ae12ac.png",
     "static/media/java.png": "/my-portfolio/static/media/java.eaaa43242e9e1f807728.png",
     "static/media/gcp.png": "/my-portfolio/static/media/gcp.72ea52cf34b1a0cf12eb.png",
     "static/media/git.png": "/my-portfolio/static/media/git.fdf09e8ace434404a199.png",
     "static/media/typescript.png": "/my-portfolio/static/media/typescript.053c48e56beff0b355d9.png",
     "static/media/react.png": "/my-portfolio/static/media/react.4cc634d4cc81591da92b.png",
     "static/media/dsa.png": "/my-portfolio/static/media/dsa.bf69df59ba4c3d5aad60.png",
+    "static/media/Pharmacord.png": "/my-portfolio/static/media/Pharmacord.57546b7f97e42ec94c02.png",
     "static/media/redux.jpg": "/my-portfolio/static/media/redux.63cbd8b0b5eb3f8b05a6.jpg",
     "static/media/nx.png": "/my-portfolio/static/media/nx.005813b51e4cc784e2bd.png",
     "static/media/azure.png": "/my-portfolio/static/media/azure.3306fb3c4bb5bedf4d00.png",
@@ -18,16 +20,17 @@
     "static/media/rest-api.png": "/my-portfolio/static/media/rest-api.00cc7d22aaf3dee9ed5e.png",
     "static/media/cross-paltform.png": "/my-portfolio/static/media/cross-paltform.46638cdb0becef0a650b.png",
     "static/media/vscode.png": "/my-portfolio/static/media/vscode.48f5c85bd03a13f7f991.png",
+    "static/media/Duly.png": "/my-portfolio/static/media/Duly.f6765aa042aa7004fb3d.png",
     "static/media/dev-tools.png": "/my-portfolio/static/media/dev-tools.51ad9104a05adade4416.png",
     "static/media/responsive.jpg": "/my-portfolio/static/media/responsive.33d5a4278e5a4ce6babc.jpg",
     "static/media/logo.svg": "/my-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.a8514c03.css.map": "/my-portfolio/static/css/main.a8514c03.css.map",
-    "main.b0ee5686.js.map": "/my-portfolio/static/js/main.b0ee5686.js.map",
+    "main.1243e3c2.css.map": "/my-portfolio/static/css/main.1243e3c2.css.map",
+    "main.1f7bde4d.js.map": "/my-portfolio/static/js/main.1f7bde4d.js.map",
     "453.41811d64.chunk.js.map": "/my-portfolio/static/js/453.41811d64.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8514c03.css",
-    "static/js/main.b0ee5686.js"
+    "static/css/main.1243e3c2.css",
+    "static/js/main.1f7bde4d.js"
   ]
 }
